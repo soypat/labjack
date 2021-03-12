@@ -1,4 +1,4 @@
-package: github.com/eliquious/labjack/u6
+package: github.com/soypat/labjack/u6
 import:
-- package: github.com/eliquious/labjack
+- package: github.com/soypat/labjack
 - package: github.com/google/gousb

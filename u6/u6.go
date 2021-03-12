@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/eliquious/labjack"
+
 	"github.com/google/gousb"
+	"github.com/soypat/labjack"
 	// "io"
 )
 

@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/eliquious/labjack/u6"
-	"github.com/google/gousb"
 	"log"
 	"os"
 	"time"
+
+	"github.com/google/gousb"
+	"github.com/soypat/labjack/u6"
 )
 
 func main() {
@@ -25,7 +26,7 @@ func main() {
 
 	fmt.Println(dev.DeviceDesc())
 
-	stream, err := dev.NewStream(u6.StreamConfig{1, 25, 0, u6.ScanConfig{u6.ClockSpeed4Mhz, u6.ClockDivisionOff}, []u6.ChannelConfig{{12, u6.GainIndex10, u6.DifferentialInputDisabled}}})
+	stream, err := dev.NewStream(&u6.StreamConfig{1, 25, 0, u6.ScanConfig{u6.ClockSpeed4Mhz, u6.ClockDivisionOff}, []u6.ChannelConfig{{12, u6.GainIndex10, u6.DifferentialInputDisabled}}})
 	if err != nil {
 		log.Fatal(err)
 	}

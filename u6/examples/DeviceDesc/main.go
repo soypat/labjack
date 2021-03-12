@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/eliquious/labjack/u6"
-	"github.com/google/gousb"
 	"log"
 	"time"
+
+	"github.com/google/gousb"
+	"github.com/soypat/labjack/u6"
 )
 
 func main() {

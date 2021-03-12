@@ -3,11 +3,12 @@ package u6_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/eliquious/labjack/u6"
-	"github.com/google/gousb"
 	"log"
 	"testing"
 	"time"
+
+	"github.com/google/gousb"
+	"github.com/soypat/labjack/u6"
 )
 
 func Example_Open() {

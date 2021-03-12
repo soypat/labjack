@@ -1,0 +1,6 @@
+github.com/eliquious/labjack v0.0.0-20170815230414-2cc050bb2290 h1:Wrw2sFB/tvaeMD1kcOb2OTcdh3lCtgjmcysSaecXtmg=
+github.com/eliquious/labjack v0.0.0-20170815230414-2cc050bb2290/go.mod h1:q217HcTM+eWCS28rLovLxQN2aevfmrg1dvwQcZlwhMo=
+github.com/google/gousb v1.1.1 h1:2sjwXlc0PIBgDnXtNxUrHcD/RRFOmAtRq4QgnFBE6xc=
+github.com/google/gousb v1.1.1/go.mod h1:b3uU8itc6dHElt063KJobuVtcKHWEfFOysOqBNzHhLY=
+github.com/soypat/labjack v0.0.0-20170815230414-2cc050bb2290 h1:VxK4viojfTf3Xy78ZzboqDkrNwm8yIx1x3rtQTHH4jg=
+github.com/soypat/labjack v0.0.0-20170815230414-2cc050bb2290/go.mod h1:AQ/Yctm/DA9R/S3UxESznpNTmE6zLtv1WQtnT9EOYRM=

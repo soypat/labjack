@@ -4,10 +4,11 @@ import (
 	// "bufio"
 	"errors"
 	"fmt"
-	"github.com/eliquious/labjack"
-	"github.com/google/gousb"
 	"io"
 	"time"
+
+	"github.com/google/gousb"
+	"github.com/soypat/labjack"
 )
 
 type StreamConfig struct {
