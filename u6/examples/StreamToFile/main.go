@@ -26,7 +26,21 @@ func main() {
 
 	fmt.Println(dev.DeviceDesc())
 
-	stream, err := dev.NewStream(&u6.StreamConfig{1, 25, 0, u6.ScanConfig{u6.ClockSpeed4Mhz, u6.ClockDivisionOff}, []u6.ChannelConfig{{12, u6.GainIndex10, u6.DifferentialInputDisabled}}})
+	// These values are only demonstative. not tested
+	cfg := u6.StreamConfig{
+		ResolutionIndex:  1,
+		SamplesPerPacket: 25,
+		SettlingFactor:   0,
+		ScanFrequency:    1,
+		ScanConfig: &u6.ScanConfig{
+			ClockSpeed:   u6.ClockSpeed4Mhz,
+			DivideBy256:  u6.ClockDivisionOff,
+			ScanInterval: 0},
+		Channels: []u6.ChannelConfig{
+			{PositiveChannel: 1, GainIndex: u6.GainIndex1000, Differential: u6.DifferentialInputDisabled}, // one channel
+		},
+	}
+	stream, err := dev.NewStream(&cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
